@@ -6,6 +6,6 @@
     "\\Hexadecimators.BreazyFit.Logging\\Implementations",
     "\\Hexadecimators.BreazyFit.SqlDataAccess"
   ],
-  "SelectedNode": "\\Hexadecimators.BreazyFit.Logging\\Implementations\\DatabaseLogger.cs",
+  "SelectedNode": "\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
   "PreviewInSolutionExplorer": false
 }
