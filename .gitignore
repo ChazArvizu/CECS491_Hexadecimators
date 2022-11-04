@@ -366,3 +366,6 @@ FodyWeavers.xsd
 *.editorconfig
 Hexadecimators.BreazyFit/.vs/Hexadecimators.BreazyFit/v17/.suo
 Hexadecimators.BreazyFit/.vs/slnx.sqlite
+Hexadecimators.BreazyFit/.vs/Hexadecimators.BreazyFit/v17/.suo
+*.cache
+*.editorconfig
