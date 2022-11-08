@@ -27,6 +27,68 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+                "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
+              },
+              "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
+                "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
+        "projectName": "Hexadecimators.BreazyFit.Models",
+        "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
+        "packagesPath": "C:\\Users\\Chaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -39,6 +101,71 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
+        "projectName": "Hexadecimators.BreazyFit.SqlDataAccess",
+        "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
+        "packagesPath": "C:\\Users\\Chaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+                "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

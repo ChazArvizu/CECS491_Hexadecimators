@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.Client", "Hexadecimators.BreazyFit.Client\Hexadecimators.BreazyFit.Client.csproj", "{5B3B1CC5-9F68-4B19-86B5-B92436D9EE6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexadecimators.BreazyFit.Client", "Hexadecimators.BreazyFit.Client\Hexadecimators.BreazyFit.Client.csproj", "{5B3B1CC5-9F68-4B19-86B5-B92436D9EE6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{637413FB-6CC4-42CC-A1E4-5351CCA8F44F}"
 EndProject
@@ -13,9 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4CD5764D-C4F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{96CE61A1-A69B-48A5-A4D7-FBF3A567E9F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.SqlDataAccess", "Hexadecimators.BreazyFit.SqlDataAccess\Hexadecimators.BreazyFit.SqlDataAccess.csproj", "{F58CA2F9-F32A-4959-9B2F-A6651BF71EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexadecimators.BreazyFit.SqlDataAccess", "Hexadecimators.BreazyFit.SqlDataAccess\Hexadecimators.BreazyFit.SqlDataAccess.csproj", "{F58CA2F9-F32A-4959-9B2F-A6651BF71EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.Logging", "Hexadecimators.BreazyFit.Logging\Hexadecimators.BreazyFit.Logging.csproj", "{F322247D-F87A-48BE-A307-86978C8EE451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexadecimators.BreazyFit.Logging", "Hexadecimators.BreazyFit.Logging\Hexadecimators.BreazyFit.Logging.csproj", "{F322247D-F87A-48BE-A307-86978C8EE451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.Logging.Tests", "Hexadecimators.BreazyFit.Logging.Tests\Hexadecimators.BreazyFit.Logging.Tests.csproj", "{B95E9D68-D70F-4172-91AB-9DAEEA320057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.Registration.Tests", "Hexadecimators.BreazyFit.Registration.Tests\Hexadecimators.BreazyFit.Registration.Tests.csproj", "{0C78B427-4F82-4507-9C31-3CE66F2F60BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexadecimators.BreazyFit.Models", "Hexadecimators.BreazyFit.Models\Hexadecimators.BreazyFit.Models.csproj", "{BBD7FC81-A5B3-46DE-A438-DFFCB8A4173F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,18 @@ Global
 		{F322247D-F87A-48BE-A307-86978C8EE451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F322247D-F87A-48BE-A307-86978C8EE451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F322247D-F87A-48BE-A307-86978C8EE451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95E9D68-D70F-4172-91AB-9DAEEA320057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95E9D68-D70F-4172-91AB-9DAEEA320057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95E9D68-D70F-4172-91AB-9DAEEA320057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95E9D68-D70F-4172-91AB-9DAEEA320057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C78B427-4F82-4507-9C31-3CE66F2F60BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C78B427-4F82-4507-9C31-3CE66F2F60BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C78B427-4F82-4507-9C31-3CE66F2F60BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C78B427-4F82-4507-9C31-3CE66F2F60BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD7FC81-A5B3-46DE-A438-DFFCB8A4173F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD7FC81-A5B3-46DE-A438-DFFCB8A4173F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD7FC81-A5B3-46DE-A438-DFFCB8A4173F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD7FC81-A5B3-46DE-A438-DFFCB8A4173F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +61,8 @@ Global
 		{5B3B1CC5-9F68-4B19-86B5-B92436D9EE6C} = {637413FB-6CC4-42CC-A1E4-5351CCA8F44F}
 		{F58CA2F9-F32A-4959-9B2F-A6651BF71EFF} = {4CD5764D-C4FF-419B-8A35-7746212439D0}
 		{F322247D-F87A-48BE-A307-86978C8EE451} = {B1E45FC7-233C-425E-9C55-C752ACA58309}
+		{B95E9D68-D70F-4172-91AB-9DAEEA320057} = {96CE61A1-A69B-48A5-A4D7-FBF3A567E9F1}
+		{0C78B427-4F82-4507-9C31-3CE66F2F60BD} = {96CE61A1-A69B-48A5-A4D7-FBF3A567E9F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3514481E-D4F4-4DED-8C63-DA1257E3E31D}

@@ -11,4 +11,8 @@
     <Folder Include="Abstractions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hexadecimators.BreazyFit.Models\Hexadecimators.BreazyFit.Models.csproj" />
+  </ItemGroup>
+
 </Project>
