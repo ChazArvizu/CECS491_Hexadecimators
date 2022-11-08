@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hexadecimators.BreazyFit.Logging.Implementations
 {
-    public class DatabaseLogger
+    public class Logger
     {
+        public async Task<Result> Log(String message)
+        {
+
+        }
     }
 }
