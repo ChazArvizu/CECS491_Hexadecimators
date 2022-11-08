@@ -782,6 +782,9 @@
       "Hexadecimators.BreazyFit.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.0.1"
+        },
         "compile": {
           "bin/placeholder/Hexadecimators.BreazyFit.Models.dll": {}
         },
@@ -2596,23 +2599,24 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hexadecimators.BreazyFit.Models >= 1.0.0",
-      "Hexadecimators.BreazyFit.SqlDataAccess >= 1.0.0"
+      "Hexadecimators.BreazyFit.SqlDataAccess >= 1.0.0",
+      "Microsoft.Data.SqlClient >= 5.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Chaz\\.nuget\\packages\\": {}
+    "C:\\Users\\seani\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
+      "projectUniqueName": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
       "projectName": "Hexadecimators.BreazyFit.Logging",
-      "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
-      "packagesPath": "C:\\Users\\Chaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\obj\\",
+      "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
+      "packagesPath": "C:\\Users\\seani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Chaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\seani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2626,11 +2630,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
-              "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
+            "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+              "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
             },
-            "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
-              "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj"
+            "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
+              "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj"
             }
           }
         }
@@ -2644,6 +2648,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
