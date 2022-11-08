@@ -1,0 +1,15 @@
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\bin\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.exe
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\bin\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.deps.json
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\bin\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.runtimeconfig.json
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\bin\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.dll
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\bin\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.pdb
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.csproj.AssemblyReference.cache
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.AssemblyInfoInputs.cache
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.AssemblyInfo.cs
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.dll
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\refint\Hexadecimators.BreazyFit.SqlDataAccess.dll
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.pdb
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\Hexadecimators.BreazyFit.SqlDataAccess.genruntimeconfig.cache
+C:\Users\adela\Documents\GitHub\CECS491_Hexadecimators\Hexadecimators.BreazyFit\Hexadecimators.BreazyFit.SqlDataAccess\obj\Debug\net6.0\ref\Hexadecimators.BreazyFit.SqlDataAccess.dll
