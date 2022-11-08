@@ -39,6 +39,7 @@ namespace Hexadecimators.BreazyFit.SqlDataAccess
                     return result;
                 }
                 result.IsSuccessful = false;
+                result.ErrorMessage = $"Rows affected not 1. rows affected {rows}";
                 return result;
             }
         }

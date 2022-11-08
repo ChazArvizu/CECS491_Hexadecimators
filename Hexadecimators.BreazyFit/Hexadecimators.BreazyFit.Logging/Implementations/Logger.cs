@@ -40,8 +40,15 @@ namespace Hexadecimators.BreazyFit.Logging.Implementations
                 return result;
             }
             #endregion
-            var daoResult = await _dao.LogData(message);
+            var daoResult = await _dao.LogData(message).ConfigureAwait(false);
 
+            if (daoResult.IsSuccessful)
+            {
+                result.IsSuccessful = true;
+                return result;
+            }
+
+            return result;
 
         }
     }

@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Hexadecimators.BreazyFit.Models\Hexadecimators.BreazyFit.Models.csproj" />
     <ProjectReference Include="..\Hexadecimators.BreazyFit.SqlDataAccess\Hexadecimators.BreazyFit.SqlDataAccess.csproj" />
   </ItemGroup>
