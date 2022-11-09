@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {}
+    "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+    "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
+        "projectUniqueName": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
         "projectName": "Hexadecimators.BreazyFit.Models",
-        "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
+        "projectPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj",
         "packagesPath": "C:\\Users\\seani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\obj\\",
+        "outputPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,18 +55,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
+    "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
         "projectName": "Hexadecimators.BreazyFit.SqlDataAccess",
-        "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
+        "projectPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\Hexadecimators.BreazyFit.SqlDataAccess.csproj",
         "packagesPath": "C:\\Users\\seani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\obj\\",
+        "outputPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.SqlDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
-                "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
+              "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj": {
+                "projectPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Models\\Hexadecimators.BreazyFit.Models.csproj"
               }
             }
           }
@@ -120,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

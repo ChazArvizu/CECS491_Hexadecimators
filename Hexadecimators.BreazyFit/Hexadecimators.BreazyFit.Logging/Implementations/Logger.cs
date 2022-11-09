@@ -17,7 +17,7 @@ namespace Hexadecimators.BreazyFit.Logging.Implementations
             _dao = dao;
         }
 
-        public async Task<Result> Log(String message)
+        public async Task<Result> Log(string message)
         {
             var result = new Result();
 
@@ -27,8 +27,8 @@ namespace Hexadecimators.BreazyFit.Logging.Implementations
                 result.IsSuccessful = true;
                 return result;
             }
-            if(message.Length > 200) 
-            { 
+            if (message.Length > 200)
+            {
                 result.IsSuccessful = false;
                 result.ErrorMessage = "Message is longer than 200";
                 return result;

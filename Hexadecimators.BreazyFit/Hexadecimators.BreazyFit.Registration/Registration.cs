@@ -2,8 +2,9 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.SqlServer;
 using Microsoft.Identity.Client;
-
-
+using Hexadecimators.BreazyFit.Models;
+using Hexadecimators.BreazyFit.SqlDataAccess;
+using Microsoft.VisualBasic;
 
 namespace Hexadecimators.BreazyFit.Registration
 {
@@ -18,7 +19,10 @@ namespace Hexadecimators.BreazyFit.Registration
         static string connectionString = @"Server=.\;Database=Hexadecimators.BreazyFit.Users;Integrated Security=True;Encrypt=False";
 
 
-        public static Boolean inputValidate(string email, string pass, SqlConnection conn)
+        static private readonly SqlDAO dao = new SqlDAO(connectionString);
+
+
+        public static Boolean Validate(string email, string pass)
         {
             /* REQUIREMENTS: 
             EMAIL:
@@ -29,20 +33,6 @@ namespace Hexadecimators.BreazyFit.Registration
             -must be minimum 8 chars
             -must use valid chars
             */
-
-
-
-            //SELECT query for database
-
-            string emailQuery = "SELECT [Email] FROM [Hexadecimators.BreazyFit.Users].[dbo].[Users] WHERE [Email]='" + email + "';";
-
-
-            var command = new SqlCommand(emailQuery, conn);
-            command.ExecuteNonQuery();
-
-            //create a reader object to return the rows selected
-
-            SqlDataReader reader = command.ExecuteReader();
 
             //**Email and User Validation**
 
@@ -57,7 +47,6 @@ namespace Hexadecimators.BreazyFit.Registration
                 nameChunk = email.Substring(0, email.IndexOf('@'));
                 addressChunk = email.Substring(email.IndexOf('@') + 1);
 
-
             }
             else
             {
@@ -66,46 +55,65 @@ namespace Hexadecimators.BreazyFit.Registration
             }
 
 
+
+
+            //SELECT query for database
+
+            string emailQuery = "SELECT [Username] FROM [Hexadecimators.BreazyFit.Users].[dbo].[Users] WHERE [Username]='" + nameChunk + "';";
+            
+            Result result = dao.ExecuteSql(emailQuery);
+
+
             //if email is not of valid formatting, do not create account
 
-            if (nameChunk.Length <= 0 || addressChunk.Length <= 0 || addressChunk.EndsWith('.') || addressChunk.IndexOf('.') == -1)
+            if (nameChunk.Length <= 0 ||
+                addressChunk.Length <= 0 ||
+                addressChunk.EndsWith('.') ||
+                addressChunk.IndexOf('.') == -1 ||
+                addressChunk.Contains(".."))
+
             {
 
                 Console.WriteLine("Invalid Email format.");
-                reader.Close();
                 return false;
 
             }
 
-            //   sean@gmail.co.us
+
 
             //if SELECT query returns any rows, do not create account due to taken username
 
-            if (reader.HasRows)
+            if (dao.rowExists == true)
             {
-                //if SELECT query returns any rows, do not create account due to taken username
 
-                Console.WriteLine("Email has already been taken.");
-
-                reader.Close();
+                Console.WriteLine("Email or Username has already been taken.");
                 return false;
             };
 
-            reader.Close();
+
+            //Password validation
+
+            char[] invalidChars = { '{', '}', '?', '=', '[', ']', '(', ')', '#', '$', '%', '^', '<', '>', '&', '*', '.', '+', '=', '_', '|', '\'', '`', '~' };
+
+            //check to see  valid length and if any invalid characters are used
+
+            if (pass.Length < 7 || pass.IndexOfAny(invalidChars) != -1)
+            {
+                Console.WriteLine("Password is invalid.");
+                return false;
+
+            }
+
             return true;
         }
 
 
 
 
-        public static void databaseConnection(string email, string password)
+        public static void UserCreation(string email, string password)
         {
-            //connect to database
-
-            SqlConnection connection = new SqlConnection(connectionString);
             try
             {
-                connection.Open();
 
 
                 //first half of email string taken as username
@@ -113,27 +121,19 @@ namespace Hexadecimators.BreazyFit.Registration
                 string userUsername = email.Substring(0, email.LastIndexOf('@'));
 
                 Console.WriteLine("Email: " + email);
-                Console.WriteLine("User: " + userUsername);
 
                 //string that SQL uses to insert values
-
-                string userQuery = "Insert into Users(Email,Username,Password) Values('" + email + "','" + userUsername + "','" + password + "');";
 
 
                 //validate input before executing sql
 
-                    if (inputValidate(email, password, connection) == true)
+                    if (Validate(email, password) == true)
                     {
+                    //pass our query string to the connection string
+                    dao.ExecuteSql("Insert into Users(Email,Username,Password) Values('" + email + "','" + userUsername + "','" + password + "');");
 
-                        //pass our query string to the connection string
-
-                        var command = new SqlDataAdapter(userQuery, connection);
-                        command.SelectCommand.ExecuteNonQuery();
-
-                        Console.WriteLine("User: " + userUsername + "\n Account created successfully.");
+                    Console.WriteLine("User: " + userUsername + " Account created successfully.");
                     }
-
-
 
 
             }
@@ -141,17 +141,17 @@ namespace Hexadecimators.BreazyFit.Registration
             {
                 Console.WriteLine("error registering.");
             }
-            finally
-            {
-                connection.Close();
-            }
+
 
         }
 
         private static void Main(string[] args)
         {
-            databaseConnection("sean02@gmail.com", "seanpass");
+            UserCreation("email100@aol.com", "TESTRRRRR");
         }
 
     }
+
+
+
 }

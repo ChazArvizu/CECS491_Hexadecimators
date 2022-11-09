@@ -4,6 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hexadecimators.BreazyFit.Models\Hexadecimators.BreazyFit.Models.csproj" />
+    <ProjectReference Include="..\Hexadecimators.BreazyFit.SqlDataAccess\Hexadecimators.BreazyFit.SqlDataAccess.csproj" />
+  </ItemGroup>
 
 </Project>

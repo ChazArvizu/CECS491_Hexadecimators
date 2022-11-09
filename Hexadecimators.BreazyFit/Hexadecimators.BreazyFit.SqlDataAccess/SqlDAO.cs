@@ -11,9 +11,11 @@ namespace Hexadecimators.BreazyFit.SqlDataAccess
     public class SqlDAO
     {
         private string _connectionString;
+        public Boolean rowExists;
 
         public SqlDAO(string connectionString)
         {
+            rowExists = false;
             _connectionString = connectionString;
         }
 
@@ -24,27 +26,34 @@ namespace Hexadecimators.BreazyFit.SqlDataAccess
             {
                 connection.Open();
 
-                var insertSql = "INSERT INTO Hexadecimators.BreazyFit.Logs (Message) values(%message)";
+                var command = new SqlCommand(sql, connection);
 
-                var parameter = new SqlParameter("message", sql);
+                //int rows =command.ExecuteNonQuery();
+                int rows = 1;
+                
 
-                var command = new SqlCommand(insertSql, connection);
-                command.Parameters.Add(parameter);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    rowExists = true;
+                }
 
-                var rows = command.ExecuteNonQuery();
-
-                if(rows == 1)
+                if (rows == 1)
                 {
                     result.IsSuccessful = true;
                     return result;
                 }
+
+
+
                 result.IsSuccessful = false;
                 result.ErrorMessage = $"Rows affected not 1. rows affected {rows}";
+
                 return result;
             }
         }
 
-        public Result LogData(String message)
+        public async Task<Result> LogData(string message)
         {
             var result = new Result();
             return result;
