@@ -17,9 +17,12 @@ namespace Hexadecimators.BreazyFit.Registration
         //Connection String to SQL server
 
         static string connectionString = @"Server=.\;Database=Hexadecimators.BreazyFit.Users;Integrated Security=True;Encrypt=False";
+        static string logConnectionString = @"Server=.\;Database=Hexadecimators.BreazyFit.Logs;Integrated Security=True;Encrypt=False";
 
 
         static private readonly SqlDAO dao = new SqlDAO(connectionString);
+        static private readonly SqlDAO logDao = new SqlDAO(logConnectionString);
+
 
 
         public static Boolean Validate(string email, string pass)
@@ -62,6 +65,12 @@ namespace Hexadecimators.BreazyFit.Registration
             string emailQuery = "SELECT [Username] FROM [Hexadecimators.BreazyFit.Users].[dbo].[Users] WHERE [Username]='" + nameChunk + "';";
             
             Result result = dao.ExecuteSql(emailQuery);
+            LogModel logModel = new LogModel();
+            logModel.TimeStamp= DateTime.Now;
+            var logResult = logDao.LogData(logModel);
+
+
+
 
 
             //if email is not of valid formatting, do not create account
@@ -132,6 +141,7 @@ namespace Hexadecimators.BreazyFit.Registration
                     //pass our query string to the connection string
                     dao.ExecuteSql("Insert into Users(Email,Username,Password) Values('" + email + "','" + userUsername + "','" + password + "');");
 
+
                     Console.WriteLine("User: " + userUsername + " Account created successfully.");
                     }
 
@@ -147,7 +157,7 @@ namespace Hexadecimators.BreazyFit.Registration
 
         private static void Main(string[] args)
         {
-            UserCreation("email100@aol.com", "TESTRRRRR");
+            UserCreation("email1000@aol.com", "TESTRRRRR");
         }
 
     }

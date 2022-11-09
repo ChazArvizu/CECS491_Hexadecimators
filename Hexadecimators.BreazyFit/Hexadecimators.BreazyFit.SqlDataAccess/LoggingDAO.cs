@@ -8,35 +8,29 @@ using Microsoft.Data.SqlClient;
 
 namespace Hexadecimators.BreazyFit.SqlDataAccess
 {
-    public class SqlDAO
+    public class LoggingDAO
     {
         private string _connectionString;
-        public Boolean rowExists;
 
-        public SqlDAO(string connectionString)
+        public LoggingDAO(string connectionString)
         {
-            rowExists = false;
             _connectionString = connectionString;
         }
 
-        public Result ExecuteSql(string sql)
+        public async Task<Result> LogData(LogModel log)
         {
             var result = new Result();
+
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 
-                var command = new SqlCommand(sql, connection);
+                string sqlQuery =  "Insert into Logs(TimeStamp,LogLevel,UserPerforming,Category,Description) Values('" + log.TimeStamp + "','" + log.LogLevel + "','" + log.UserPerforming + "','" + log.Category + "','" + log.Description + "')";
 
-                //int rows =command.ExecuteNonQuery();
-                int rows = 1;
-                
+                var command = new SqlCommand(sqlQuery, connection);
 
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    rowExists = true;
-                }
+                var rows = command.ExecuteNonQuery();
+
 
                 if (rows == 1)
                 {
@@ -45,14 +39,12 @@ namespace Hexadecimators.BreazyFit.SqlDataAccess
                 }
 
 
-
                 result.IsSuccessful = false;
                 result.ErrorMessage = $"Rows affected not 1. rows affected {rows}";
 
                 return result;
             }
         }
-
 
     }
 }
