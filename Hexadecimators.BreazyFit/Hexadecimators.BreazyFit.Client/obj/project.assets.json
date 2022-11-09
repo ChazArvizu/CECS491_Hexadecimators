@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Chaz\\.nuget\\packages\\": {}
+    "C:\\Users\\seani\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
+      "projectUniqueName": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
       "projectName": "Hexadecimators.BreazyFit.Client",
-      "projectPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
-      "packagesPath": "C:\\Users\\Chaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chaz\\Desktop\\CECS491A\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\obj\\",
+      "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
+      "packagesPath": "C:\\Users\\seani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Chaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\seani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
