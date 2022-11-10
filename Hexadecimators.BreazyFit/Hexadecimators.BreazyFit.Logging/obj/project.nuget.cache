@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v40CjGc++qi0wcqWs39CqAhqbbORU7wnrs9eI7f3X9IEA6KwVzy/Ry1odWeFhITJBf7TJPK6jF/4vXCUG+PHLQ==",
+  "dgSpecHash": "uJfleedZ52dWz5pDnyrJCUSqLCYsy1jPXNQ9jphhBAX8+pmogvPx5c91FScCTQy0nKV3/xeeYTmXtmHR7ltsxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
+  "projectFilePath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Logging\\Hexadecimators.BreazyFit.Logging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seani\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\seani\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

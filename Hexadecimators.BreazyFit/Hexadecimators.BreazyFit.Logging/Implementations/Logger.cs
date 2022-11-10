@@ -10,9 +10,10 @@ namespace Hexadecimators.BreazyFit.Logging.Implementations
 {
     public class Logger
     {
-        private readonly SqlDAO _dao;
+        private readonly LoggingDAO _dao;
 
-        public Logger(SqlDAO dao)
+
+        public Logger(LoggingDAO dao)
         {
             _dao = dao;
         }

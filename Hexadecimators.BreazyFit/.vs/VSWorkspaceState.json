@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Hexadecimators.BreazyFit.Logging"
+    "\\Hexadecimators.BreazyFit.Logging",
+    "\\Hexadecimators.BreazyFit.Logging\\Implementations",
+    "\\Hexadecimators.BreazyFit.Registration",
+    "\\Hexadecimators.BreazyFit.Registration.Tests",
+    "\\Hexadecimators.BreazyFit.SqlDataAccess"
   ],
-  "SelectedNode": "\\Hexadecimators.BreazyFit.sln",
+  "SelectedNode": "\\Hexadecimators.BreazyFit.Registration\\Hexadecimators.BreazyFit.Registration.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -1,31 +1,35 @@
 ﻿
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.SqlServer;
 using Microsoft.Identity.Client;
 using Hexadecimators.BreazyFit.Models;
 using Hexadecimators.BreazyFit.SqlDataAccess;
 using Microsoft.VisualBasic;
 
-namespace Hexadecimators.BreazyFit.Registration
+namespace Hexadecimators.BreazyFit.Registration.Implementations
 {
 
 
-    class Registration
+    public class Register
     {
+        public Register()
+        {
+
+        }
 
 
         //Connection String to SQL server
 
         static string connectionString = @"Server=.\;Database=Hexadecimators.BreazyFit.Users;Integrated Security=True;Encrypt=False";
-        static string logConnectionString = @"Server=.\;Database=Hexadecimators.BreazyFit.Logs;Integrated Security=True;Encrypt=False";
+
 
 
         static private readonly SqlDAO dao = new SqlDAO(connectionString);
-        static private readonly SqlDAO logDao = new SqlDAO(logConnectionString);
+        static private readonly LoggingDAO logDao = new LoggingDAO(connectionString);
 
 
 
-        public static Boolean Validate(string email, string pass)
+        public bool Validate(string email, string pass)
         {
             /* REQUIREMENTS: 
             EMAIL:
@@ -63,11 +67,9 @@ namespace Hexadecimators.BreazyFit.Registration
             //SELECT query for database
 
             string emailQuery = "SELECT [Username] FROM [Hexadecimators.BreazyFit.Users].[dbo].[Users] WHERE [Username]='" + nameChunk + "';";
-            
+
             Result result = dao.ExecuteSql(emailQuery);
-            LogModel logModel = new LogModel();
-            logModel.TimeStamp= DateTime.Now;
-            var logResult = logDao.LogData(logModel);
+
 
 
 
@@ -83,7 +85,7 @@ namespace Hexadecimators.BreazyFit.Registration
 
             {
 
-                Console.WriteLine("Invalid Email format.");
+                Console.WriteLine("Invalid email provided. Retry again or contact system administrator");
                 return false;
 
             }
@@ -95,7 +97,7 @@ namespace Hexadecimators.BreazyFit.Registration
             if (dao.rowExists == true)
             {
 
-                Console.WriteLine("Email or Username has already been taken.");
+                Console.WriteLine("Unable to assign username. Retry again or contact system administrator");
                 return false;
             };
 
@@ -108,7 +110,7 @@ namespace Hexadecimators.BreazyFit.Registration
 
             if (pass.Length < 7 || pass.IndexOfAny(invalidChars) != -1)
             {
-                Console.WriteLine("Password is invalid.");
+                Console.WriteLine("Invalid passphrase provided. Retry again or contact system administrator");
                 return false;
 
             }
@@ -119,8 +121,10 @@ namespace Hexadecimators.BreazyFit.Registration
 
 
 
-        public static void UserCreation(string email, string password)
+        public Result UserCreation(string email, string password)
         {
+            var result = new Result();
+
             try
             {
 
@@ -136,29 +140,52 @@ namespace Hexadecimators.BreazyFit.Registration
 
                 //validate input before executing sql
 
-                    if (Validate(email, password) == true)
-                    {
+                if (Validate(email, password) == true)
+                {
                     //pass our query string to the connection string
                     dao.ExecuteSql("Insert into Users(Email,Username,Password) Values('" + email + "','" + userUsername + "','" + password + "');");
+                    
+                    //Log Data
+                    
+                    
+                    var logModel = new LogModel();
+                    logModel.TimeStamp = DateTime.Now;
+                    logModel.LogLevel = "Info";
+                    logModel.UserPerforming = "User";
+                    logModel.Category = "Business";
+                    logModel.Description = "User has been created with inputted data.";
+
+                    var logResult = logDao.LogData(logModel);
 
 
                     Console.WriteLine("User: " + userUsername + " Account created successfully.");
-                    }
+                    result.IsSuccessful = true;
+                    return result;
+                }
 
 
             }
             catch
             {
                 Console.WriteLine("error registering.");
+                result.IsSuccessful = false;
+                return result;
             }
 
 
+            result.IsSuccessful = false;
+            return result;
+
+
         }
 
-        private static void Main(string[] args)
-        {
-            UserCreation("email1000@aol.com", "TESTRRRRR");
-        }
+
+    static public void Main(string[] args)
+    {
+        Register reg = new Register();
+        reg.UserCreation("finalTest19@gmail.com", "Pass12345");
+    }
+
 
     }
 

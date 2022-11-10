@@ -25,9 +25,11 @@ namespace Hexadecimators.BreazyFit.SqlDataAccess
             {
                 connection.Open();
 
-                string sqlQuery =  "Insert into Logs(TimeStamp,LogLevel,UserPerforming,Category,Description) Values('" + log.TimeStamp + "','" + log.LogLevel + "','" + log.UserPerforming + "','" + log.Category + "','" + log.Description + "')";
+
+                string sqlQuery =  "INSERT INTO Logs(Timestamp,LogLevel,UserPerforming,Category,Description) Values('" + log.TimeStamp + "','" + log.LogLevel + "','" + log.UserPerforming + "','" + log.Category + "','" + log.Description + "');";
 
                 var command = new SqlCommand(sqlQuery, connection);
+                
 
                 var rows = command.ExecuteNonQuery();
 

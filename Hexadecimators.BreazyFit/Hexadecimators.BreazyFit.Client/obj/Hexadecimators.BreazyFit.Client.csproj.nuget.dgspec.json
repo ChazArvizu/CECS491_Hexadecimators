@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj": {}
+    "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj": {
+    "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
+        "projectUniqueName": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
         "projectName": "Hexadecimators.BreazyFit.Client",
-        "projectPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
+        "projectPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\Hexadecimators.BreazyFit.Client.csproj",
         "packagesPath": "C:\\Users\\seani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seani\\Source\\Repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\obj\\",
+        "outputPath": "C:\\Users\\seani\\source\\repos\\CECS491_Hexadecimators\\Hexadecimators.BreazyFit\\Hexadecimators.BreazyFit.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
